@@ -24,7 +24,7 @@ Lexer::~Lexer() {
 
 void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
-//    automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new ColonDashAutomaton());
 //    automata.push_back(new AddAutomaton());
 //    automata.push_back(new CommaAutomaton());
 //    automata.push_back(new EndOfFileAutomaton());
@@ -40,33 +40,34 @@ void Lexer::Run(std::string& input) {
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
 
     int lineNumber = 1;
-    int maxRead = 0;
-    int inputRead = 0;
-    Automaton *maxAutomaton;
-    Token *newToken;
 
-    while (input.size() > 0) {
-        maxRead = 0;
-        maxAutomaton = automata[0];
-    }
+    while (!input.empty()) {
+        int maxRead = 0;
+        Automaton* maxAutomaton = nullptr;
 
         // TODO: you need to handle whitespace inbetween tokens
 
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
         for (auto &&automaton : automata) {
-            inputRead = automaton->Start(input);
+            int inputRead = automaton->Start(input);
             if (inputRead > maxRead) {
                 maxRead = inputRead;
                 maxAutomaton = automaton;
+                // Talk later w Jax
+                lineNumber += automaton->NewLinesRead();
             }
         }
 
         // Here is the "Max" part of the algorithm
         if (maxRead > 0) {
-            newToken = maxAutomaton->CreateToken(input, lineNumber);
-            lineNumber = lineNumber + maxAutomaton->NewLinesRead();
-            tokens.push_back(newToken);
+            if(maxAutomaton->GetType() != TokenType::WHITESPACE) {
+
+
+                Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+                //lineNumber = lineNumber + maxAutomaton->NewLinesRead();
+                tokens.push_back(newToken);
+            }
             //newToken->tokenToString();
 
             // add newToken to collection of all tokens
@@ -75,14 +76,19 @@ void Lexer::Run(std::string& input) {
         // Create single character undefined token
         else {
             maxRead = 1;
-            // TODO: RESUME HERE
-
-            Token *myToken =  new Token(input, inputRead, lineNumber);
-//            (with first character of input)
-            tokens.push_back(myToken);
+            auto* newToken =  new Token(TokenType::UNDEFINED, input.substr(0,1), lineNumber);
+            maxRead = 1;
+            tokens.push_back(newToken);
         }
         // Update `input` by removing characters read to create Token
-        input = input[maxRead, input.size()];
+        input = input.substr(maxRead,input.size());
     }
     //TODO: add end of file token to all tokens
-//}
+    auto* eofToken = new Token(TokenType::EOF_TYPE, "", lineNumber);
+    tokens.push_back(eofToken);
+
+    //print all tokens
+    for (auto& token: tokens) {
+        token->toString();
+    }
+}

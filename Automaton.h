@@ -17,6 +17,8 @@ public:
 
     Automaton(TokenType type) { this->type = type; }
 
+    TokenType GetType() {return this->type;}
+
     // Start the automaton and return the number of characters read
     //   read == 0 indicates the input was rejected
     //   read  > 0 indicates the input was accepted
