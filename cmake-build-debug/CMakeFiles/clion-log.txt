@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/rileyross/CLionProjects/CS236/Project1-Lexer/Project1
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/rileyross/CLionProjects/CS236/Project1-Lexer/Project1/cmake-build-debug
+-- Build files have been written to: /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug

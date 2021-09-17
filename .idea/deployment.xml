@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="Schizo (bd221c0b-8b33-4468-85a9-1f87bcdf5024)" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="Schizo (bd221c0b-8b33-4468-85a9-1f87bcdf5024)">
         <serverdata>
           <mappings>
-            <mapping deploy="/Project1/LabTestCases" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/cs236/project1_lexer/Project1_Lexer/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

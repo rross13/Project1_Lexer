@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+Token.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
+string
+-
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.cpp
+WhiteSpaceAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.h
+Automaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+cctype
+-
+
