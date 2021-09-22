@@ -13,4 +13,14 @@ add_executable(Project1
         ColonAutomaton.cpp
         ColonAutomaton.h
         ColonDashAutomaton.cpp
-        ColonDashAutomaton.h WhiteSpaceAutomaton.cpp WhiteSpaceAutomaton.h LeftParenAutomaton.cpp LeftParenAutomaton.h RightParenAutomaton.cpp RightParenAutomaton.h)
+        ColonDashAutomaton.h
+        WhiteSpaceAutomaton.cpp
+        WhiteSpaceAutomaton.h
+        LeftParenAutomaton.cpp
+        LeftParenAutomaton.h
+        RightParenAutomaton.cpp
+        RightParenAutomaton.h
+        CommaAutomaton.cpp
+        CommaAutomaton.h
+        PeriodAutomaton.cpp
+        PeriodAutomaton.h QMarkAutomaton.cpp QMarkAutomaton.h AddAutomaton.cpp AddAutomaton.h MultiplyAutomaton.cpp MultiplyAutomaton.h)

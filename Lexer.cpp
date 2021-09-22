@@ -4,14 +4,12 @@
 #include "WhiteSpaceAutomaton.h"
 #include "LeftParenAutomaton.h"
 #include "RightParenAutomaton.h"
+#include "CommaAutomaton.h"
+#include "PeriodAutomaton.h"
+#include "QMarkAutomaton.h"
+#include "AddAutomaton.h"
+#include "MultiplyAutomaton.h"
 
-//#include "AddAutomaton.h"
-//#include "CommaAutomaton.h"
-//#include "EndOfFileAutomaton.h"
-
-//#include "MultiplyAutomaton.h"
-//#include "PeriodAutomaton.h"
-//#include "QMarkAutomaton.h"
 #include <iostream>
 
 Lexer::Lexer() {
@@ -37,14 +35,11 @@ void Lexer::CreateAutomata() {
     automata.push_back(new WhiteSpaceAutomaton());
     automata.push_back(new LeftParenAutomaton());
     automata.push_back(new RightParenAutomaton());
-
-
-//    automata.push_back(new AddAutomaton());
-//    automata.push_back(new CommaAutomaton());
-//    automata.push_back(new EndOfFileAutomaton());
-//    automata.push_back(new MultiplyAutomaton());
-//    automata.push_back(new PeriodAutomaton());
-//    automata.push_back(new QMarkAutomaton());
+    automata.push_back(new CommaAutomaton());
+    automata.push_back(new PeriodAutomaton());
+    automata.push_back(new QMarkAutomaton());
+    automata.push_back(new AddAutomaton());
+    automata.push_back(new MultiplyAutomaton());
     // TODO: Add the other needed automata here
 }
 
@@ -96,8 +91,11 @@ void Lexer::Run(std::string& input) {
         input = input.substr(maxRead,input.size());
     }
     //TODO: add end of file token to all tokens
-    auto* eofToken = new Token(TokenType::EOF_TYPE, "", lineNumber);
-    tokens.push_back(eofToken);
+    if(input.empty()) {
+        auto* eofToken = new Token(TokenType::EOF_TYPE, "", lineNumber);
+        tokens.push_back(eofToken);
+    }
+
 
     //print all tokens
     for (auto& token: tokens) {

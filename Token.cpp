@@ -20,8 +20,13 @@ std::string Token::tokenToString(TokenType type) {
         case TokenType::WHITESPACE: return "";
         case TokenType::LEFT_PAREN: return "LEFT_PAREN";
         case TokenType::RIGHT_PAREN: return "RIGHT_PAREN";
+        case TokenType::COMMA: return "COMMA";
+        case TokenType::PERIOD: return "PERIOD";
+        case TokenType::Q_MARK: return "Q_MARK";
+        case TokenType::ADD: return "ADD";
+        case TokenType::MULTIPLY: return "MULTIPLY";
 
-        case TokenType::EOF_TYPE: return "";
+        case TokenType::EOF_TYPE: return "EOF";
         case TokenType::UNDEFINED: return "";
     } return "ERROR";
 //    if(type == TokenType::COLON) {

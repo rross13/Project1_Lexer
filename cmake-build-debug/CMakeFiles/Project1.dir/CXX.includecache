@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/AddAutomaton.h
+
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 Token.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonAutomaton.cpp
-ColonAutomaton.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonAutomaton.h
-
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonAutomaton.h
 Automaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
-
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonDashAutomaton.cpp
-ColonDashAutomaton.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonDashAutomaton.h
 
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonDashAutomaton.h
 Automaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp
-LeftParenAutomaton.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/EndOfFileAutomaton.cpp
+EndOfFileAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/EndOfFileAutomaton.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/EndOfFileAutomaton.h
+Automaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.h
 Automaton.h
@@ -47,6 +47,18 @@ LeftParenAutomaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.h
 RightParenAutomaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.h
+CommaAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.h
+PeriodAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/PeriodAutomaton.h
+QMarkAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QMarkAutomaton.h
+AddAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/AddAutomaton.h
+MultiplyAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.h
+EndOfFileAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/EndOfFileAutomaton.h
 iostream
 -
 
@@ -57,6 +69,14 @@ Automaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 Token.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/PeriodAutomaton.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QMarkAutomaton.h
+Automaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.h
 
@@ -70,23 +90,9 @@ iostream
 string
 -
 
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.cpp
-WhiteSpaceAutomaton.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.h
-
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.h
 Automaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 cctype
 -
-
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/main.cpp
-iostream
--
-fstream
--
-sstream
--
-Lexer.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
 
