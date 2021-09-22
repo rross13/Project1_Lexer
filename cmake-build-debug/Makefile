@@ -177,6 +177,33 @@ ColonDashAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.s
 .PHONY : ColonDashAutomaton.cpp.s
 
+LeftParenAutomaton.o: LeftParenAutomaton.cpp.o
+
+.PHONY : LeftParenAutomaton.o
+
+# target to build an object file
+LeftParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o
+.PHONY : LeftParenAutomaton.cpp.o
+
+LeftParenAutomaton.i: LeftParenAutomaton.cpp.i
+
+.PHONY : LeftParenAutomaton.i
+
+# target to preprocess a source file
+LeftParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.i
+.PHONY : LeftParenAutomaton.cpp.i
+
+LeftParenAutomaton.s: LeftParenAutomaton.cpp.s
+
+.PHONY : LeftParenAutomaton.s
+
+# target to generate assembly for a file
+LeftParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.s
+.PHONY : LeftParenAutomaton.cpp.s
+
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -203,6 +230,33 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
+
+RightParenAutomaton.o: RightParenAutomaton.cpp.o
+
+.PHONY : RightParenAutomaton.o
+
+# target to build an object file
+RightParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o
+.PHONY : RightParenAutomaton.cpp.o
+
+RightParenAutomaton.i: RightParenAutomaton.cpp.i
+
+.PHONY : RightParenAutomaton.i
+
+# target to preprocess a source file
+RightParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/RightParenAutomaton.cpp.i
+.PHONY : RightParenAutomaton.cpp.i
+
+RightParenAutomaton.s: RightParenAutomaton.cpp.s
+
+.PHONY : RightParenAutomaton.s
+
+# target to generate assembly for a file
+RightParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/RightParenAutomaton.cpp.s
+.PHONY : RightParenAutomaton.cpp.s
 
 Token.o: Token.cpp.o
 
@@ -300,9 +354,15 @@ help:
 	@echo "... ColonDashAutomaton.o"
 	@echo "... ColonDashAutomaton.i"
 	@echo "... ColonDashAutomaton.s"
+	@echo "... LeftParenAutomaton.o"
+	@echo "... LeftParenAutomaton.i"
+	@echo "... LeftParenAutomaton.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... RightParenAutomaton.o"
+	@echo "... RightParenAutomaton.i"
+	@echo "... RightParenAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"

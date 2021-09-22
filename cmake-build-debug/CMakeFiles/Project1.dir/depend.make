@@ -11,12 +11,23 @@ CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o: ../ColonDashAutomaton.cpp
 CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o: ../ColonDashAutomaton.h
 CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.cpp
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.h
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../Token.h
+
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Automaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../ColonAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../ColonDashAutomaton.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../LeftParenAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Lexer.cpp
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Lexer.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../RightParenAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Token.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../WhiteSpaceAutomaton.h
+
+CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
+CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.h
 
 CMakeFiles/Project1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/Project1.dir/Token.cpp.o: ../Token.h

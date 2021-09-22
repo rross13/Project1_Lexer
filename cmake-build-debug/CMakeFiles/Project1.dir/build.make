@@ -135,6 +135,32 @@ CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.cpp -o CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.s
 
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: CMakeFiles/Project1.dir/flags.make
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o -c /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp
+
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp > CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.i
+
+CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp -o CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.s
+
+CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o: CMakeFiles/Project1.dir/flags.make
+CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o -c /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.cpp
+
+CMakeFiles/Project1.dir/RightParenAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1.dir/RightParenAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.cpp > CMakeFiles/Project1.dir/RightParenAutomaton.cpp.i
+
+CMakeFiles/Project1.dir/RightParenAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/RightParenAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.cpp -o CMakeFiles/Project1.dir/RightParenAutomaton.cpp.s
+
 # Object files for target Project1
 Project1_OBJECTS = \
 "CMakeFiles/Project1.dir/main.cpp.o" \
@@ -142,7 +168,9 @@ Project1_OBJECTS = \
 "CMakeFiles/Project1.dir/Token.cpp.o" \
 "CMakeFiles/Project1.dir/ColonAutomaton.cpp.o" \
 "CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o" \
-"CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.o"
+"CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.o" \
+"CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o" \
+"CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o"
 
 # External object files for target Project1
 Project1_EXTERNAL_OBJECTS =
@@ -153,9 +181,11 @@ Project1: CMakeFiles/Project1.dir/Token.cpp.o
 Project1: CMakeFiles/Project1.dir/ColonAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.o
+Project1: CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o
+Project1: CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/build.make
 Project1: CMakeFiles/Project1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Project1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Project1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

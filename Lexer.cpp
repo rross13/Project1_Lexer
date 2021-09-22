@@ -1,14 +1,18 @@
 #include "Lexer.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "WhiteSpaceAutomaton.h"
+#include "LeftParenAutomaton.h"
+#include "RightParenAutomaton.h"
+
 //#include "AddAutomaton.h"
 //#include "CommaAutomaton.h"
 //#include "EndOfFileAutomaton.h"
-//#include "LeftParenAutomaton.h"
-//#include "RightParenAutomaton.h"
+
 //#include "MultiplyAutomaton.h"
 //#include "PeriodAutomaton.h"
 //#include "QMarkAutomaton.h"
+#include <iostream>
 
 Lexer::Lexer() {
 //    tokens = new std::vector<Token*>();
@@ -18,18 +22,26 @@ Lexer::Lexer() {
 }
 
 Lexer::~Lexer() {
-    // TODO: need to clean up the memory in `automata` and `tokens`
+    for(unsigned int i = 0; i < automata.size(); i++) {
+        delete automata.at(i);
+    }
+    for(unsigned int i = 0; i < tokens.size(); i++) {
+        delete tokens.at(i);
+    }
 
 }
 
 void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new WhiteSpaceAutomaton());
+    automata.push_back(new LeftParenAutomaton());
+    automata.push_back(new RightParenAutomaton());
+
+
 //    automata.push_back(new AddAutomaton());
 //    automata.push_back(new CommaAutomaton());
 //    automata.push_back(new EndOfFileAutomaton());
-//    automata.push_back(new LeftParenAutomaton());
-//    automata.push_back(new RightParenAutomaton());
 //    automata.push_back(new MultiplyAutomaton());
 //    automata.push_back(new PeriodAutomaton());
 //    automata.push_back(new QMarkAutomaton());
