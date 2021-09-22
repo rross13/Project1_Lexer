@@ -17,10 +17,10 @@ CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o: ../Token.h
 CMakeFiles/Project1.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.cpp
 CMakeFiles/Project1.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.h
 
-CMakeFiles/Project1.dir/EndOfFileAutomaton.cpp.o: ../Automaton.h
-CMakeFiles/Project1.dir/EndOfFileAutomaton.cpp.o: ../EndOfFileAutomaton.cpp
-CMakeFiles/Project1.dir/EndOfFileAutomaton.cpp.o: ../EndOfFileAutomaton.h
-CMakeFiles/Project1.dir/EndOfFileAutomaton.cpp.o: ../Token.h
+CMakeFiles/Project1.dir/FactsAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/Project1.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
+CMakeFiles/Project1.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.h
+CMakeFiles/Project1.dir/FactsAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.cpp
@@ -32,7 +32,7 @@ CMakeFiles/Project1.dir/Lexer.cpp.o: ../Automaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../ColonAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../ColonDashAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../CommaAutomaton.h
-CMakeFiles/Project1.dir/Lexer.cpp.o: ../EndOfFileAutomaton.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../FactsAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../LeftParenAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Lexer.cpp
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Lexer.h
@@ -40,6 +40,8 @@ CMakeFiles/Project1.dir/Lexer.cpp.o: ../MultiplyAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../PeriodAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../QMarkAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../RightParenAutomaton.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../RulesAutomaton.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../SchemesAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../Token.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../WhiteSpaceAutomaton.h
 
@@ -54,8 +56,21 @@ CMakeFiles/Project1.dir/QMarkAutomaton.cpp.o: ../QMarkAutomaton.cpp
 CMakeFiles/Project1.dir/QMarkAutomaton.cpp.o: ../QMarkAutomaton.h
 CMakeFiles/Project1.dir/QMarkAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project1.dir/QueriesAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/Project1.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.cpp
+CMakeFiles/Project1.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.h
+CMakeFiles/Project1.dir/QueriesAutomaton.cpp.o: ../Token.h
+
 CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
 CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.h
+
+CMakeFiles/Project1.dir/RulesAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/Project1.dir/RulesAutomaton.cpp.o: ../RulesAutomaton.cpp
+CMakeFiles/Project1.dir/RulesAutomaton.cpp.o: ../RulesAutomaton.h
+CMakeFiles/Project1.dir/RulesAutomaton.cpp.o: ../Token.h
+
+CMakeFiles/Project1.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.cpp
+CMakeFiles/Project1.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.h
 
 CMakeFiles/Project1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/Project1.dir/Token.cpp.o: ../Token.h

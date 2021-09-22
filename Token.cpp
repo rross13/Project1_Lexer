@@ -25,6 +25,10 @@ std::string Token::tokenToString(TokenType type) {
         case TokenType::Q_MARK: return "Q_MARK";
         case TokenType::ADD: return "ADD";
         case TokenType::MULTIPLY: return "MULTIPLY";
+        case TokenType::SCHEMES: return "SCHEMES";
+        case TokenType::FACTS: return "FACTS";
+        case TokenType::RULES: return "RULES";
+        case TokenType::QUERIES: return "QUERIES";
 
         case TokenType::EOF_TYPE: return "EOF";
         case TokenType::UNDEFINED: return "";

@@ -109,10 +109,10 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
-		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/EndOfFileAutomaton.cpp">
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.cpp">
 			<Option target="Project1"/>
 		</Unit>
-		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/EndOfFileAutomaton.h">
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp">
@@ -145,10 +145,28 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QMarkAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QueriesAutomaton.cpp">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QueriesAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.cpp">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RulesAutomaton.cpp">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RulesAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/SchemesAutomaton.cpp">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/SchemesAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.cpp">

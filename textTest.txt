@@ -1,2 +1,6 @@
 :- th*is, is. my?
+Queries:
+Schemes:
+Facts:
+Rules
 (:)? ad*d +

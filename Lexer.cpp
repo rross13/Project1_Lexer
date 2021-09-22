@@ -9,6 +9,10 @@
 #include "QMarkAutomaton.h"
 #include "AddAutomaton.h"
 #include "MultiplyAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "FactsAutomaton.h"
+#include "RulesAutomaton.h"
+#include "QueriesAutomaton.h"
 
 #include <iostream>
 
@@ -40,6 +44,10 @@ void Lexer::CreateAutomata() {
     automata.push_back(new QMarkAutomaton());
     automata.push_back(new AddAutomaton());
     automata.push_back(new MultiplyAutomaton());
+    automata.push_back(new SchemesAutomaton());
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new RulesAutomaton());
+    automata.push_back(new QueriesAutomaton());
     // TODO: Add the other needed automata here
 }
 
