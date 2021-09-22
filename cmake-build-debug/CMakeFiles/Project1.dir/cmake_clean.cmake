@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project1.dir/RightParenAutomaton.cpp.o"
   "CMakeFiles/Project1.dir/RulesAutomaton.cpp.o"
   "CMakeFiles/Project1.dir/SchemesAutomaton.cpp.o"
+  "CMakeFiles/Project1.dir/StringAutomaton.cpp.o"
   "CMakeFiles/Project1.dir/Token.cpp.o"
   "CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.o"
   "CMakeFiles/Project1.dir/main.cpp.o"

@@ -13,6 +13,8 @@
 #include "FactsAutomaton.h"
 #include "RulesAutomaton.h"
 #include "QueriesAutomaton.h"
+//ID
+#include "StringAutomaton.h"
 
 #include <iostream>
 
@@ -48,6 +50,8 @@ void Lexer::CreateAutomata() {
     automata.push_back(new FactsAutomaton());
     automata.push_back(new RulesAutomaton());
     automata.push_back(new QueriesAutomaton());
+    //ID
+    automata.push_back(new StringAutomaton());
     // TODO: Add the other needed automata here
 }
 

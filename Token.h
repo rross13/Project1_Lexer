@@ -18,7 +18,7 @@ enum class TokenType {
     RULES,
     QUERIES,
 //    ID,
-//    STRING,
+    STRING,
 //    COMMENT,
     EOF_TYPE,
     UNDEFINED

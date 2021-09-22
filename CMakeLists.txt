@@ -23,4 +23,4 @@ add_executable(Project1
         CommaAutomaton.cpp
         CommaAutomaton.h
         PeriodAutomaton.cpp
-        PeriodAutomaton.h QMarkAutomaton.cpp QMarkAutomaton.h AddAutomaton.cpp AddAutomaton.h MultiplyAutomaton.cpp MultiplyAutomaton.h SchemesAutomaton.cpp SchemesAutomaton.h FactsAutomaton.cpp FactsAutomaton.h RulesAutomaton.cpp RulesAutomaton.h QueriesAutomaton.cpp QueriesAutomaton.h)
+        PeriodAutomaton.h QMarkAutomaton.cpp QMarkAutomaton.h AddAutomaton.cpp AddAutomaton.h MultiplyAutomaton.cpp MultiplyAutomaton.h SchemesAutomaton.cpp SchemesAutomaton.h FactsAutomaton.cpp FactsAutomaton.h RulesAutomaton.cpp RulesAutomaton.h QueriesAutomaton.cpp QueriesAutomaton.h StringAutomaton.cpp StringAutomaton.h)

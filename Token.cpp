@@ -29,6 +29,8 @@ std::string Token::tokenToString(TokenType type) {
         case TokenType::FACTS: return "FACTS";
         case TokenType::RULES: return "RULES";
         case TokenType::QUERIES: return "QUERIES";
+        //ID
+        case TokenType::STRING: return "STRING";
 
         case TokenType::EOF_TYPE: return "EOF";
         case TokenType::UNDEFINED: return "";

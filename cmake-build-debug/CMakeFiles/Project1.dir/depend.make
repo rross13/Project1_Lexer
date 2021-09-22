@@ -39,6 +39,7 @@ CMakeFiles/Project1.dir/Lexer.cpp.o: ../Lexer.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../MultiplyAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../PeriodAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../QMarkAutomaton.h
+CMakeFiles/Project1.dir/Lexer.cpp.o: ../QueriesAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../RightParenAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../RulesAutomaton.h
 CMakeFiles/Project1.dir/Lexer.cpp.o: ../SchemesAutomaton.h
@@ -71,6 +72,11 @@ CMakeFiles/Project1.dir/RulesAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/Project1.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.cpp
 CMakeFiles/Project1.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.h
+
+CMakeFiles/Project1.dir/StringAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/Project1.dir/StringAutomaton.cpp.o: ../StringAutomaton.cpp
+CMakeFiles/Project1.dir/StringAutomaton.cpp.o: ../StringAutomaton.h
+CMakeFiles/Project1.dir/StringAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/Project1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/Project1.dir/Token.cpp.o: ../Token.h

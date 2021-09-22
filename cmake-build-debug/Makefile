@@ -501,6 +501,33 @@ SchemesAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/SchemesAutomaton.cpp.s
 .PHONY : SchemesAutomaton.cpp.s
 
+StringAutomaton.o: StringAutomaton.cpp.o
+
+.PHONY : StringAutomaton.o
+
+# target to build an object file
+StringAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/StringAutomaton.cpp.o
+.PHONY : StringAutomaton.cpp.o
+
+StringAutomaton.i: StringAutomaton.cpp.i
+
+.PHONY : StringAutomaton.i
+
+# target to preprocess a source file
+StringAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/StringAutomaton.cpp.i
+.PHONY : StringAutomaton.cpp.i
+
+StringAutomaton.s: StringAutomaton.cpp.s
+
+.PHONY : StringAutomaton.s
+
+# target to generate assembly for a file
+StringAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/StringAutomaton.cpp.s
+.PHONY : StringAutomaton.cpp.s
+
 Token.o: Token.cpp.o
 
 .PHONY : Token.o
@@ -633,6 +660,9 @@ help:
 	@echo "... SchemesAutomaton.o"
 	@echo "... SchemesAutomaton.i"
 	@echo "... SchemesAutomaton.s"
+	@echo "... StringAutomaton.o"
+	@echo "... StringAutomaton.i"
+	@echo "... StringAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
