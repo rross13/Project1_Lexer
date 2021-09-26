@@ -22,7 +22,7 @@ void StringAutomaton::S1(const std::string& input) {
         }
     }
 
-    else if (std::isalpha(input[index]) || std::isspace(input[index])) {
+    else if (input[index] != '\'') {
         inputRead++;
         index++;
         S1(input);

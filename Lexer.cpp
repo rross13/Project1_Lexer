@@ -25,8 +25,6 @@
 //
 //String question: will there be words like 'don't' with single quote in the middle?
 //
-// Keywords are printing with colons and shouldn't be
-//
 // Fix the end of keywords for newline, EOF so it doesn't print
 //
 // Unterminating string needs fixing
@@ -39,12 +37,12 @@ Lexer::Lexer() {
 }
 
 Lexer::~Lexer() {
-    for(unsigned int i = 0; i < automata.size(); i++) {
-        delete automata.at(i);
-    }
-    for(unsigned int i = 0; i < tokens.size(); i++) {
-        delete tokens.at(i);
-    }
+//    for(unsigned int i = 0; i < automata.size(); i++) {
+//        delete automata.at(i);
+//    }
+//    for(unsigned int i = 0; i < tokens.size(); i++) {
+//        delete tokens.at(i);
+//    }
 
 }
 
@@ -100,6 +98,7 @@ void Lexer::Run(std::string& input) {
 
 
                 Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+                //Token *newToken = maxAutomaton->CreateToken(lineNumber - maxAutomaton->NewLinesRead());
                 //lineNumber = lineNumber + maxAutomaton->NewLinesRead();
                 tokens.push_back(newToken);
             }
@@ -129,5 +128,5 @@ void Lexer::Run(std::string& input) {
     for (auto& token: tokens) {
         token->toString();
     }
-    std::cout << "TOTAL TOKENS = " << tokens.size();
+    std::cout << "Total Tokens = " << tokens.size();
 }

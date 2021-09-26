@@ -33,19 +33,21 @@ void CommentAutomaton::S1(const std::string& input) {
 }
 
 void CommentAutomaton::S2(const std::string& input) {
-    if (input[index] == '|') {
+    if (index >= input.size()) {
+        type = TokenType::UNDEFINED;
+        return;
+    } else if (input[index] == '|') {
         inputRead++;
         index++;
         S3(input);
-    } else if (std::isalpha(input[index]) || std::isspace(input[index])) {
+    } else if (input[index] != '|') {
+        if (input[index] == '\n') {
+            newLines++;
+        }
         inputRead++;
         index++;
         S2(input);
-    } else if (index >= input.size()) {
-        type = TokenType::UNDEFINED;
-        return;
-    }
-    else {
+    } else {
         Serr();
     }
 }
@@ -54,6 +56,10 @@ void CommentAutomaton::S3(const std::string& input) {
     if (input[index] == '#') {
         inputRead++;
         index++;
+    } else if (input[index] != '#') {
+//        inputRead++;
+//        index++;
+        S2(input);
     }
     else {
         Serr();

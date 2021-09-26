@@ -16,7 +16,7 @@ void IDAutomaton::S0(const std::string& input) {
 }
 
 void IDAutomaton::S1(const std::string& input) {
-    if (!std::isalpha(input[index])) {
+    if (!std::isalnum(input[index])) {
         return;
     }
 
