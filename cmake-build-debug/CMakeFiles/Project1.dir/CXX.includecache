@@ -10,11 +10,11 @@
 Token.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/StringAutomaton.cpp
-StringAutomaton.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/StringAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.cpp
+FactsAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h
 
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/StringAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h
 Automaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
 

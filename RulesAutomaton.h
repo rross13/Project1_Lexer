@@ -10,7 +10,7 @@ private:
     void S2(const std::string& input);
     void S3(const std::string& input);
     void S4(const std::string& input);
-    void S5(const std::string& input);
+    //void S5(const std::string& input);
 
 public:
     RulesAutomaton() : Automaton(TokenType::RULES) {}  // Call the base constructor

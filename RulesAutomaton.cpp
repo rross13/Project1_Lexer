@@ -48,20 +48,22 @@ void RulesAutomaton::S4(const std::string& input) {
     if (input[index] == 's') {
         inputRead++;
         index++;
-        S5(input);
-    }
-    else {
-        Serr();
-    }
-}
-
-void RulesAutomaton::S5(const std::string& input) {
-    if (std::isspace(input[index])) {
-        inputRead++;
-    } else if(input[index] == ':') {
+        //S5(input);
         return;
     }
     else {
         Serr();
     }
 }
+
+//void RulesAutomaton::S5(const std::string& input) {
+//    if (std::isspace(input[index])) {
+//        inputRead++;
+//    } else if(input[index] == ':') {
+//        inputRead++;
+//        return;
+//    }
+//    else {
+//        Serr();
+//    }
+//}

@@ -291,6 +291,45 @@ CMakeFiles/Project1.dir/StringAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/StringAutomaton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/StringAutomaton.cpp -o CMakeFiles/Project1.dir/StringAutomaton.cpp.s
 
+CMakeFiles/Project1.dir/CommentAutomaton.cpp.o: CMakeFiles/Project1.dir/flags.make
+CMakeFiles/Project1.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Project1.dir/CommentAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1.dir/CommentAutomaton.cpp.o -c /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.cpp
+
+CMakeFiles/Project1.dir/CommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1.dir/CommentAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.cpp > CMakeFiles/Project1.dir/CommentAutomaton.cpp.i
+
+CMakeFiles/Project1.dir/CommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/CommentAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.cpp -o CMakeFiles/Project1.dir/CommentAutomaton.cpp.s
+
+CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o: CMakeFiles/Project1.dir/flags.make
+CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o: ../LineCommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o -c /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.cpp
+
+CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.cpp > CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.i
+
+CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.cpp -o CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.s
+
+CMakeFiles/Project1.dir/IDAutomaton.cpp.o: CMakeFiles/Project1.dir/flags.make
+CMakeFiles/Project1.dir/IDAutomaton.cpp.o: ../IDAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Project1.dir/IDAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project1.dir/IDAutomaton.cpp.o -c /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.cpp
+
+CMakeFiles/Project1.dir/IDAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project1.dir/IDAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.cpp > CMakeFiles/Project1.dir/IDAutomaton.cpp.i
+
+CMakeFiles/Project1.dir/IDAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project1.dir/IDAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.cpp -o CMakeFiles/Project1.dir/IDAutomaton.cpp.s
+
 # Object files for target Project1
 Project1_OBJECTS = \
 "CMakeFiles/Project1.dir/main.cpp.o" \
@@ -310,7 +349,10 @@ Project1_OBJECTS = \
 "CMakeFiles/Project1.dir/FactsAutomaton.cpp.o" \
 "CMakeFiles/Project1.dir/RulesAutomaton.cpp.o" \
 "CMakeFiles/Project1.dir/QueriesAutomaton.cpp.o" \
-"CMakeFiles/Project1.dir/StringAutomaton.cpp.o"
+"CMakeFiles/Project1.dir/StringAutomaton.cpp.o" \
+"CMakeFiles/Project1.dir/CommentAutomaton.cpp.o" \
+"CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o" \
+"CMakeFiles/Project1.dir/IDAutomaton.cpp.o"
 
 # External object files for target Project1
 Project1_EXTERNAL_OBJECTS =
@@ -333,9 +375,12 @@ Project1: CMakeFiles/Project1.dir/FactsAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/RulesAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/QueriesAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/StringAutomaton.cpp.o
+Project1: CMakeFiles/Project1.dir/CommentAutomaton.cpp.o
+Project1: CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o
+Project1: CMakeFiles/Project1.dir/IDAutomaton.cpp.o
 Project1: CMakeFiles/Project1.dir/build.make
 Project1: CMakeFiles/Project1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Project1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Project1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

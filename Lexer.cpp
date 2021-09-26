@@ -13,10 +13,23 @@
 #include "FactsAutomaton.h"
 #include "RulesAutomaton.h"
 #include "QueriesAutomaton.h"
-//ID
+#include "IDAutomaton.h"
 #include "StringAutomaton.h"
+#include "CommentAutomaton.h"
+#include "LineCommentAutomaton.h"
 
 #include <iostream>
+
+//
+//        Are my block comments printing properly?
+//
+//String question: will there be words like 'don't' with single quote in the middle?
+//
+// Keywords are printing with colons and shouldn't be
+//
+// Fix the end of keywords for newline, EOF so it doesn't print
+//
+// Unterminating string needs fixing
 
 Lexer::Lexer() {
 //    tokens = new std::vector<Token*>();
@@ -38,7 +51,6 @@ Lexer::~Lexer() {
 void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new WhiteSpaceAutomaton());
     automata.push_back(new LeftParenAutomaton());
     automata.push_back(new RightParenAutomaton());
     automata.push_back(new CommaAutomaton());
@@ -50,8 +62,12 @@ void Lexer::CreateAutomata() {
     automata.push_back(new FactsAutomaton());
     automata.push_back(new RulesAutomaton());
     automata.push_back(new QueriesAutomaton());
-    //ID
+    automata.push_back(new IDAutomaton());
     automata.push_back(new StringAutomaton());
+    automata.push_back(new CommentAutomaton());
+    //automata.push_back(new LineCommentAutomaton());
+    automata.push_back(new WhiteSpaceAutomaton());
+
     // TODO: Add the other needed automata here
 }
 
@@ -113,4 +129,5 @@ void Lexer::Run(std::string& input) {
     for (auto& token: tokens) {
         token->toString();
     }
+    std::cout << "TOTAL TOKENS = " << tokens.size();
 }

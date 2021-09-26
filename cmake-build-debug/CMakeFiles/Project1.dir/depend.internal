@@ -17,10 +17,20 @@ CMakeFiles/Project1.dir/ColonDashAutomaton.cpp.o
 CMakeFiles/Project1.dir/CommaAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.h
+CMakeFiles/Project1.dir/CommentAutomaton.cpp.o
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.cpp
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 CMakeFiles/Project1.dir/FactsAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
+CMakeFiles/Project1.dir/IDAutomaton.cpp.o
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.cpp
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 CMakeFiles/Project1.dir/LeftParenAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
@@ -33,10 +43,13 @@ CMakeFiles/Project1.dir/Lexer.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/ColonDashAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/PeriodAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QMarkAutomaton.h
@@ -44,8 +57,14 @@ CMakeFiles/Project1.dir/Lexer.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RulesAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/SchemesAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/StringAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.h
+CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.cpp
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 CMakeFiles/Project1.dir/MultiplyAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.h
@@ -71,8 +90,10 @@ CMakeFiles/Project1.dir/RulesAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RulesAutomaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 CMakeFiles/Project1.dir/SchemesAutomaton.cpp.o
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/SchemesAutomaton.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/SchemesAutomaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 CMakeFiles/Project1.dir/StringAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/StringAutomaton.cpp

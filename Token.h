@@ -5,7 +5,6 @@
 enum class TokenType {
     COLON,
     COLON_DASH,
-    WHITESPACE,
     LEFT_PAREN,
     RIGHT_PAREN,
     COMMA,
@@ -17,9 +16,10 @@ enum class TokenType {
     FACTS,
     RULES,
     QUERIES,
-//    ID,
+    ID,
     STRING,
-//    COMMENT,
+    COMMENT,
+    WHITESPACE,
     EOF_TYPE,
     UNDEFINED
 };

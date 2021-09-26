@@ -109,10 +109,22 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommaAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.cpp">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.cpp">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.cpp">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp">
@@ -125,6 +137,12 @@
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.cpp">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LineCommentAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.cpp">

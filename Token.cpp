@@ -8,7 +8,7 @@ Token::Token(TokenType type, std::string description, int line) {
 }
 
 void Token::toString() {
-    std::cout << "(" << tokenToString(this->tokenType) << ", \"" << this->tokenDescription << "\", " << this->tokenLine << ")\n";
+    std::cout << "(" << tokenToString(this->tokenType) << ",\"" << this->tokenDescription << "\"," << this->tokenLine << ")\n";
 }
 
 std::string Token::tokenToString(TokenType type) {
@@ -17,7 +17,6 @@ std::string Token::tokenToString(TokenType type) {
     switch(type) {
         case TokenType::COLON: return "COLON";
         case TokenType::COLON_DASH: return "COLON_DASH";
-        case TokenType::WHITESPACE: return "";
         case TokenType::LEFT_PAREN: return "LEFT_PAREN";
         case TokenType::RIGHT_PAREN: return "RIGHT_PAREN";
         case TokenType::COMMA: return "COMMA";
@@ -29,11 +28,12 @@ std::string Token::tokenToString(TokenType type) {
         case TokenType::FACTS: return "FACTS";
         case TokenType::RULES: return "RULES";
         case TokenType::QUERIES: return "QUERIES";
-        //ID
+        case TokenType::ID: return "ID";
         case TokenType::STRING: return "STRING";
-
+        case TokenType::COMMENT: return "COMMENT";
+        case TokenType::WHITESPACE: return "";
         case TokenType::EOF_TYPE: return "EOF";
-        case TokenType::UNDEFINED: return "";
+        case TokenType::UNDEFINED: return "UNDEFINED";
     } return "ERROR";
 //    if(type == TokenType::COLON) {
 //        std::cout << "(COLON, \":\"," << std::to_string(lineNumber) << ")";

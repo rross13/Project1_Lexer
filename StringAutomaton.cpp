@@ -14,12 +14,21 @@ void StringAutomaton::S0(const std::string& input) {
 void StringAutomaton::S1(const std::string& input) {
     if (input[index] == '\'') {
         inputRead++;
+        index++;
+        if(input[index] == '\'') {
+            inputRead++;
+            index++;
+            S1(input);
+        }
     }
 
     else if (std::isalpha(input[index]) || std::isspace(input[index])) {
         inputRead++;
         index++;
         S1(input);
+    } else if (index >= input.size()) {
+        type = TokenType::UNDEFINED;
+        return;
     }
     else {
         Serr();

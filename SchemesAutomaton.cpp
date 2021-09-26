@@ -70,20 +70,22 @@ void SchemesAutomaton::S6(const std::string& input) {
     if (input[index] == 's') {
         inputRead++;
         index++;
-        S7(input);
-    }
-    else {
-        Serr();
-    }
-}
-
-void SchemesAutomaton::S7(const std::string& input) {
-    if (std::isspace(input[index])) {
-        inputRead++;
-    } else if(input[index] == ':') {
+        //S7(input);
         return;
     }
     else {
         Serr();
     }
 }
+
+//void SchemesAutomaton::S7(const std::string& input) {
+//    if (std::isspace(input[index])) {
+//        //inputRead++;
+//        return;
+//    } else if(input[index] == ':') {
+//        return;
+//    }
+//    else {
+//        Serr();
+//    }
+//}

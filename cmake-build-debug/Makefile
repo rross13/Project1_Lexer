@@ -231,6 +231,33 @@ CommaAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/CommaAutomaton.cpp.s
 .PHONY : CommaAutomaton.cpp.s
 
+CommentAutomaton.o: CommentAutomaton.cpp.o
+
+.PHONY : CommentAutomaton.o
+
+# target to build an object file
+CommentAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/CommentAutomaton.cpp.o
+.PHONY : CommentAutomaton.cpp.o
+
+CommentAutomaton.i: CommentAutomaton.cpp.i
+
+.PHONY : CommentAutomaton.i
+
+# target to preprocess a source file
+CommentAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/CommentAutomaton.cpp.i
+.PHONY : CommentAutomaton.cpp.i
+
+CommentAutomaton.s: CommentAutomaton.cpp.s
+
+.PHONY : CommentAutomaton.s
+
+# target to generate assembly for a file
+CommentAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/CommentAutomaton.cpp.s
+.PHONY : CommentAutomaton.cpp.s
+
 FactsAutomaton.o: FactsAutomaton.cpp.o
 
 .PHONY : FactsAutomaton.o
@@ -257,6 +284,33 @@ FactsAutomaton.s: FactsAutomaton.cpp.s
 FactsAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/FactsAutomaton.cpp.s
 .PHONY : FactsAutomaton.cpp.s
+
+IDAutomaton.o: IDAutomaton.cpp.o
+
+.PHONY : IDAutomaton.o
+
+# target to build an object file
+IDAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/IDAutomaton.cpp.o
+.PHONY : IDAutomaton.cpp.o
+
+IDAutomaton.i: IDAutomaton.cpp.i
+
+.PHONY : IDAutomaton.i
+
+# target to preprocess a source file
+IDAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/IDAutomaton.cpp.i
+.PHONY : IDAutomaton.cpp.i
+
+IDAutomaton.s: IDAutomaton.cpp.s
+
+.PHONY : IDAutomaton.s
+
+# target to generate assembly for a file
+IDAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/IDAutomaton.cpp.s
+.PHONY : IDAutomaton.cpp.s
 
 LeftParenAutomaton.o: LeftParenAutomaton.cpp.o
 
@@ -311,6 +365,33 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
+
+LineCommentAutomaton.o: LineCommentAutomaton.cpp.o
+
+.PHONY : LineCommentAutomaton.o
+
+# target to build an object file
+LineCommentAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o
+.PHONY : LineCommentAutomaton.cpp.o
+
+LineCommentAutomaton.i: LineCommentAutomaton.cpp.i
+
+.PHONY : LineCommentAutomaton.i
+
+# target to preprocess a source file
+LineCommentAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.i
+.PHONY : LineCommentAutomaton.cpp.i
+
+LineCommentAutomaton.s: LineCommentAutomaton.cpp.s
+
+.PHONY : LineCommentAutomaton.s
+
+# target to generate assembly for a file
+LineCommentAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.s
+.PHONY : LineCommentAutomaton.cpp.s
 
 MultiplyAutomaton.o: MultiplyAutomaton.cpp.o
 
@@ -630,15 +711,24 @@ help:
 	@echo "... CommaAutomaton.o"
 	@echo "... CommaAutomaton.i"
 	@echo "... CommaAutomaton.s"
+	@echo "... CommentAutomaton.o"
+	@echo "... CommentAutomaton.i"
+	@echo "... CommentAutomaton.s"
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"
+	@echo "... IDAutomaton.o"
+	@echo "... IDAutomaton.i"
+	@echo "... IDAutomaton.s"
 	@echo "... LeftParenAutomaton.o"
 	@echo "... LeftParenAutomaton.i"
 	@echo "... LeftParenAutomaton.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
+	@echo "... LineCommentAutomaton.o"
+	@echo "... LineCommentAutomaton.i"
+	@echo "... LineCommentAutomaton.s"
 	@echo "... MultiplyAutomaton.o"
 	@echo "... MultiplyAutomaton.i"
 	@echo "... MultiplyAutomaton.s"
