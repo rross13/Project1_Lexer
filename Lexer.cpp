@@ -97,7 +97,7 @@ void Lexer::Run(std::string& input) {
             if(maxAutomaton->GetType() != TokenType::WHITESPACE) {
 
 
-                Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+                Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber - maxAutomaton->NewLinesRead());
                 //Token *newToken = maxAutomaton->CreateToken(lineNumber - maxAutomaton->NewLinesRead());
                 //lineNumber = lineNumber + maxAutomaton->NewLinesRead();
                 tokens.push_back(newToken);
