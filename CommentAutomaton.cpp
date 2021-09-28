@@ -33,7 +33,7 @@ void CommentAutomaton::S1(const std::string& input) {
 }
 
 void CommentAutomaton::S2(const std::string& input) {
-    if (index >= input.size()) {
+    if (index >= (int) input.size()) {
         type = TokenType::UNDEFINED;
         return;
     } else if (input[index] == '|') {
@@ -71,8 +71,7 @@ void CommentAutomaton::S4(const std::string& input) {
         //inputRead++;
         return;
     }
-    else if (index >= input.size()) {
-        //FIXME: IDK WHAT'S WRONG
+    else if (index >= (int) input.size()) {
         //type = TokenType::UNDEFINED;
         //newLines++;
         return;

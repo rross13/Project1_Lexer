@@ -1,11 +1,12 @@
 #include "IDAutomaton.h"
 
 void IDAutomaton::S0(const std::string& input) {
-    if (input[index] == '$' || input[index] == '&' || input[index] == '^') {
-        type = TokenType::UNDEFINED;
-        //newLines++;
-        return;
-    } else if (std::isalpha(input[index])) {
+//    if (input[index] == '$' || input[index] == '&' || input[index] == '^') {
+//        type = TokenType::UNDEFINED;
+//        //newLines++;
+//        return;
+//    } else
+    if (std::isalpha(input[index])) {
         inputRead++;
         index++;
         S1(input);
@@ -16,44 +17,32 @@ void IDAutomaton::S0(const std::string& input) {
 }
 
 void IDAutomaton::S1(const std::string& input) {
-    if (!std::isalnum(input[index])) {
+//    if (index >= (int) input.size()) {
+//        type = TokenType::UNDEFINED;
+//        return;
+//    }
+    if (std::isalnum(input[index])) {
+        inputRead++;
+        index++;
+        S1(input);
+        return;
+    } else {
         return;
     }
 
-    if (!std::isspace(input[index]) && index < input.size()) {
+
+//      if (!std::isspace(input[index]) && index < (int) input.size()) {
+    if (!std::isspace(input[index])) {
         inputRead++;
         index++;
         S1(input);
     }
-//    else if (index >= input.size()) {
-//        type = TokenType::UNDEFINED;
-//        newLines++;
-//        return;
-//    }
-    else if (index >= input.size()) {
-        type = TokenType::UNDEFINED;
-        return;
-    }
     else if (std::isspace(input[index])) {
         index++;
+        return;
     }
     else {
         Serr();
     }
 }
-
-//void IDAutomaton::S2(const std::string& input) {
-//    if (input[index] == '|') {
-//        inputRead++;
-//        index++;
-//        S3(input);
-//    } else if (std::isalpha(input[index]) || std::isspace(input[index])) {
-//        inputRead++;
-//        index++;
-//        S2(input);
-//    }
-//    else {
-//        Serr();
-//    }
-//}
 
