@@ -11,11 +11,15 @@ private:
     std::vector<Token*> parseVector;
     void CreateParser();
     int index;
+    //bool parseResult = false;
 public:
     Parser();
     ~Parser();
 
-    void Parse(std::vector<Token*> parseTokens);
+    void match(TokenType checkToken);
+
+    void ParseProgram(std::vector<Token*> parseTokens);
+    void Parse();
     void parseSchemeList();
     void parseFactList();
     void parseRuleList();

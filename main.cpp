@@ -57,7 +57,7 @@ int main(int argc, char** argv) {
 
     Parser* parser = new Parser();
 
-    parser->Parse(parseTokens);
+    parser->ParseProgram(parseTokens);
 
 
 

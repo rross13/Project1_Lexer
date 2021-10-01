@@ -116,10 +116,10 @@ void Lexer::Run(std::string& input) {
 
 
     //print all tokens
-    for (auto& token: tokens) {
-        token->toString();
-    }
-    std::cout << "Total Tokens = " << tokens.size() << std::endl;
+//    for (auto& token: tokens) {
+//        token->toString();
+//    }
+    //std::cout << "Total Tokens = " << tokens.size() << std::endl;
 }
 
 std::vector<Token*> Lexer::returnTokens() {
