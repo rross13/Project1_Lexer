@@ -20,15 +20,6 @@
 
 #include <iostream>
 
-//
-//        Are my block comments printing properly?
-//
-//String question: will there be words like 'don't' with single quote in the middle?
-//
-// Fix the end of keywords for newline, EOF so it doesn't print
-//
-// Unterminating string needs fixing
-
 Lexer::Lexer() {
 //    tokens = new std::vector<Token*>();
 //    automata = new std::vector<Automaton*>();
@@ -128,5 +119,9 @@ void Lexer::Run(std::string& input) {
     for (auto& token: tokens) {
         token->toString();
     }
-    std::cout << "Total Tokens = " << tokens.size();
+    std::cout << "Total Tokens = " << tokens.size() << std::endl;
+}
+
+std::vector<Token*> Lexer::returnTokens() {
+    return tokens;
 }

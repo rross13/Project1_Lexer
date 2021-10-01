@@ -2,6 +2,7 @@
 #include <fstream>
 #include <sstream>
 #include "Lexer.h"
+#include "Parser.h"
 
 
 int main(int argc, char** argv) {
@@ -50,6 +51,15 @@ int main(int argc, char** argv) {
     Lexer* lexer = new Lexer();
 
     lexer->Run(test);
+
+    std::vector<Token*> parseTokens;
+    parseTokens = lexer->returnTokens();
+
+    Parser* parser = new Parser();
+
+    parser->Parse(parseTokens);
+
+
 
     // TODO
     // Remember to use ifstream instead of fstream for reading input

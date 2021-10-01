@@ -10,15 +10,25 @@
 Token.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.cpp
-FactsAutomaton.h
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h
-
-/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
+vector
+-
 Automaton.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+Token.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 string
 -
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+Lexer.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
 

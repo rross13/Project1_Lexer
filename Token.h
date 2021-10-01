@@ -1,6 +1,7 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string>
+#include <vector>
 
 enum class TokenType {
     COLON,
@@ -34,7 +35,9 @@ private:
 public:
     Token(TokenType type, std::string description, int line);
     void toString();
+    TokenType getType();
     std::string tokenToString(TokenType);
+    //std::vector<Token*> findTokenVector();
     // TODO: add other needed methods
 };
 

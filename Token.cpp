@@ -11,6 +11,14 @@ void Token::toString() {
     std::cout << "(" << tokenToString(this->tokenType) << ",\"" << this->tokenDescription << "\"," << this->tokenLine << ")\n";
 }
 
+//std::vector<Token*> Token::findTokenVector() {
+//
+//}
+
+TokenType Token::getType() {
+    return tokenType;
+}
+
 std::string Token::tokenToString(TokenType type) {
     // TODO: ADD ALL TOKENS, FINISH FORMATTING
     // SWITCH METHOD
