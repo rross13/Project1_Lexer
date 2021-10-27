@@ -115,6 +115,9 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Database.h">
+			<Option target="Project1"/>
+		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h">
 			<Option target="Project1"/>
 		</Unit>
@@ -122,6 +125,9 @@
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/FactsAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Header.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.cpp">
@@ -182,6 +188,9 @@
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QueriesAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Relation.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.cpp">

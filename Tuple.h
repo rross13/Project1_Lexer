@@ -1,14 +1,26 @@
-//
-// Created by Riley Ross on 10/26/21.
-//
+#ifndef TUPLE_H
+#define TUPLE_H
 
-#ifndef PROJECT1_TUPLE_H
-#define PROJECT1_TUPLE_H
-
+#include <vector>
 
 class Tuple {
+
+public:
+    Tuple() {
+
+    }
+    ~Tuple() {
+
+    }
+    std::vector<std::string> values;
+
+    bool operator< (const Tuple &rhs) const {
+        return values < rhs.values;
+    }
+
+
 
 };
 
 
-#endif //PROJECT1_TUPLE_H
+#endif //TUPLE_H
