@@ -68,6 +68,14 @@ CMakeFiles/Project1.dir/LineCommentAutomaton.cpp.o
 CMakeFiles/Project1.dir/MultiplyAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.h
+CMakeFiles/Project1.dir/Parser.cpp.o
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parameter.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.cpp
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Predicate.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Rule.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 CMakeFiles/Project1.dir/PeriodAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/PeriodAutomaton.cpp
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/PeriodAutomaton.h
@@ -109,6 +117,11 @@ CMakeFiles/Project1.dir/WhiteSpaceAutomaton.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.h
 CMakeFiles/Project1.dir/main.cpp.o
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Automaton.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parameter.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Predicate.h
+ /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Rule.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
  /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/main.cpp

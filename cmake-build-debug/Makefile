@@ -258,33 +258,6 @@ CommentAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/CommentAutomaton.cpp.s
 .PHONY : CommentAutomaton.cpp.s
 
-DatalogProgram.o: DatalogProgram.cpp.o
-
-.PHONY : DatalogProgram.o
-
-# target to build an object file
-DatalogProgram.cpp.o:
-	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/DatalogProgram.cpp.o
-.PHONY : DatalogProgram.cpp.o
-
-DatalogProgram.i: DatalogProgram.cpp.i
-
-.PHONY : DatalogProgram.i
-
-# target to preprocess a source file
-DatalogProgram.cpp.i:
-	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/DatalogProgram.cpp.i
-.PHONY : DatalogProgram.cpp.i
-
-DatalogProgram.s: DatalogProgram.cpp.s
-
-.PHONY : DatalogProgram.s
-
-# target to generate assembly for a file
-DatalogProgram.cpp.s:
-	$(MAKE) -f CMakeFiles/Project1.dir/build.make CMakeFiles/Project1.dir/DatalogProgram.cpp.s
-.PHONY : DatalogProgram.cpp.s
-
 FactsAutomaton.o: FactsAutomaton.cpp.o
 
 .PHONY : FactsAutomaton.o
@@ -768,9 +741,6 @@ help:
 	@echo "... CommentAutomaton.o"
 	@echo "... CommentAutomaton.i"
 	@echo "... CommentAutomaton.s"
-	@echo "... DatalogProgram.o"
-	@echo "... DatalogProgram.i"
-	@echo "... DatalogProgram.s"
 	@echo "... FactsAutomaton.o"
 	@echo "... FactsAutomaton.i"
 	@echo "... FactsAutomaton.s"

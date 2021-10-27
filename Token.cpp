@@ -19,6 +19,14 @@ TokenType Token::getType() {
     return tokenType;
 }
 
+std::string Token::getDescription() {
+    return tokenDescription;
+}
+
+int Token::getLine() {
+    return tokenLine;
+}
+
 std::string Token::tokenToString(TokenType type) {
     // TODO: ADD ALL TOKENS, FINISH FORMATTING
     // SWITCH METHOD

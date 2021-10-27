@@ -10,6 +10,22 @@
 Token.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h
+Predicate.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Predicate.h
+Parameter.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parameter.h
+Rule.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Rule.h
+vector
+-
+set
+-
+algorithm
+-
+iostream
+-
+
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
 vector
 -
@@ -18,8 +34,44 @@ Automaton.h
 Token.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parameter.h
+DatalogProgram.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h
+iostream
+-
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.cpp
+Parser.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.h
+iostream
+-
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.h
+vector
+-
+Token.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
+DatalogProgram.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Predicate.h
+DatalogProgram.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h
+Parameter.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parameter.h
+iostream
+-
+vector
+-
+
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Rule.h
+Predicate.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Predicate.h
+
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h
 string
+-
+vector
 -
 
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/main.cpp
@@ -31,4 +83,6 @@ sstream
 -
 Lexer.h
 /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Lexer.h
+Parser.h
+/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.h
 

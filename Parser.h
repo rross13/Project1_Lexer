@@ -11,12 +11,14 @@ private:
     std::vector<Token*> parseVector;
     void CreateParser();
     int index;
-    //bool parseResult = false;
+
 public:
     Parser();
     ~Parser();
 
     void match(TokenType checkToken);
+    //std::string nameToString(TokenType name);
+    DatalogProgram datalogProgram;
 
     void ParseProgram(std::vector<Token*> parseTokens);
     void Parse();
@@ -28,13 +30,13 @@ public:
     void parseFact();
     void parseRule();
     void parseQuery();
-    void parseHeadPredicate();
-    void parsePredicate();
-    void parsePredicateList();
-    void parseParameterList();
-    void parseStringList();
-    void parseIDList();
-    void parseParameter();
+    Rule parseHeadPredicate(Rule &newRule);
+    Predicate parsePredicate(Predicate &addVector);
+    vector<Predicate> parsePredicateList(vector<Predicate> &addVector);
+    Predicate parseParameterList(Predicate &addVector);
+    Predicate parseStringList(Predicate &addVector);
+    Predicate parseIDList(Predicate &addVector);
+    Predicate parseParameter(Predicate &addVector);
 };
 
 

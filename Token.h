@@ -36,6 +36,10 @@ public:
     Token(TokenType type, std::string description, int line);
     void toString();
     TokenType getType();
+    // return value function
+    std::string getDescription();
+    // return line function
+    int getLine();
     std::string tokenToString(TokenType);
     //std::vector<Token*> findTokenVector();
     // TODO: add other needed methods

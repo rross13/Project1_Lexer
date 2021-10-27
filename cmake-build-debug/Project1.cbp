@@ -115,9 +115,6 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/CommentAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
-		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.cpp">
-			<Option target="Project1"/>
-		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/DatalogProgram.h">
 			<Option target="Project1"/>
 		</Unit>
@@ -157,6 +154,9 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/MultiplyAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parameter.h">
+			<Option target="Project1"/>
+		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Parser.cpp">
 			<Option target="Project1"/>
 		</Unit>
@@ -167,6 +167,9 @@
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/PeriodAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Predicate.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/QMarkAutomaton.cpp">
@@ -185,6 +188,9 @@
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RightParenAutomaton.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Rule.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/RulesAutomaton.cpp">
@@ -209,6 +215,9 @@
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Token.h">
+			<Option target="Project1"/>
+		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Tuple.h">
 			<Option target="Project1"/>
 		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/WhiteSpaceAutomaton.cpp">

@@ -48,16 +48,18 @@ int main(int argc, char** argv) {
 //        return 1;
 //    }
 
-    Lexer* lexer = new Lexer();
+    auto* lexer = new Lexer();
 
     lexer->Run(test);
 
     std::vector<Token*> parseTokens;
     parseTokens = lexer->returnTokens();
 
-    Parser* parser = new Parser();
+    auto* parser = new Parser();
 
     parser->ParseProgram(parseTokens);
+
+    //datalogProgram = parser->Parse();
 
 
 
