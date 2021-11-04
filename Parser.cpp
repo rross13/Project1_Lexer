@@ -6,6 +6,10 @@ Parser::Parser() {
     CreateParser();
 }
 
+const DatalogProgram &Parser::getDatalogProgram() const {
+    return datalogProgram;
+}
+
 Parser::~Parser() {
 
 }
@@ -45,8 +49,8 @@ void Parser::ParseProgram(std::vector<Token*> parseTokens) {
 
     try{
         Parse();
-        std::cout << "Success!" << std::endl;
-        datalogProgram.toString();
+        //std::cout << "Success!" << std::endl;
+        //datalogProgram.toString();
     } catch (Token* error) {
         std::cout << "Failure!" << std::endl;
         std::cout << "  ";
@@ -124,6 +128,7 @@ void Parser::parseScheme() {
 
     // Adding parameters to predicate vector
     schemeID.name = parseVector.at(index)->getDescription();
+    schemeID.isID = true;
     scheme.parameterList.push_back(schemeID);
 
     match(TokenType::ID);
@@ -206,6 +211,7 @@ Rule Parser::parseHeadPredicate(Rule &newRule) {
     match(TokenType::LEFT_PAREN);
 
     ruleID.name = parseVector.at(index)->getDescription();
+    ruleID.isID = true;
     newRule.headPredicate.parameterList.push_back(ruleID);
 
     match(TokenType::ID);
@@ -280,6 +286,7 @@ Predicate Parser::parseIDList(Predicate &addVector) {
         match(TokenType::COMMA);
 
         addID.name = parseVector.at(index)->getDescription();
+        addID.isID = true;
         addVector.parameterList.push_back(addID);
 
         match(TokenType::ID);
@@ -291,6 +298,10 @@ Predicate Parser::parseIDList(Predicate &addVector) {
 
 Predicate Parser::parseParameter(Predicate &addVector) {
     Parameter queryID;
+
+    if(parseVector.at(index)->getType() == TokenType::ID) {
+        queryID.isID = true;
+    }
 
     queryID.name = parseVector.at(index)->getDescription();
     addVector.parameterList.push_back(queryID);

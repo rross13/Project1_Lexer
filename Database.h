@@ -1,14 +1,40 @@
-//
-// Created by Riley Ross on 10/26/21.
-//
+#ifndef DATABASE_H
+#define DATABASE_H
 
-#ifndef PROJECT1_DATABASE_H
-#define PROJECT1_DATABASE_H
-
+#include "Relation.h"
+#include <map>
+//#include "Interpreter.h"
 
 class Database {
+
+public:
+    const map<std::string, Relation> &getMyMap() const {
+        return myMap;
+    }
+
+public:
+
+    Database(){};
+    ~Database(){};
+
+    map<std::string, Relation> myMap;
+
+    void AddRelations(std::string &name, Relation &relation) {
+
+        myMap.insert({name, relation});
+
+    }
+
+//    void AddTuples(std::vector<Predicate> newTuples) {
+//        for(auto&& p : newTuples) {
+//            Tuple newTuple();
+//            newTuple().fillTuple(p.parameterList);
+//
+//
+//        }
+//    }
 
 };
 
 
-#endif //PROJECT1_DATABASE_H
+#endif //DATABASE_H

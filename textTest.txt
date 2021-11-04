@@ -1,21 +1,38 @@
 # COPYRIGHT © BRIGHAM YOUNG UNIVERSITY CS 236
-# FOR USE ONLY DURING SPRING 2021 SEMESTER
-# passoffInput29     FAILURE RightParen,23
-# Testing for no IDs in facts.
+# FOR USE ONLY DURING SUMMER 2021 SEMESTER
 Schemes:
-
-exprTest( e )
-deathTest( d , t )
+   childOf(A,B)
+   marriedTo(A,B)
+   siblings(W,X,Y,Z)
 
 Facts:
-
-cool('eat','lots of',SPAM).
+   marriedTo('Zed','Bea').
+   marriedTo('Bea','Zed').
+   childOf('Jill','Zed').
+   childOf('Ned','Bea').
+   childOf('Tim','Bea').
+   childOf('Zed','Zed').
+   siblings('Jill','Zed','Tim','Zed').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   childOf('George Foreman','George Foreman').
+   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
+   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
+   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
+   siblings('Tod','Tod','George Foreman','Tod').
 
 Rules:
-
-deathTest(SPAM) :- exprTest
-                         ( E ).
+   childOf(X,Y):-childOf(X,Z),marriedTo(Y,Z).
+   marriedTo(X,Y):-marriedTo(Y,X).
 
 Queries:
-
-deathTest( a , b )?
+   marriedTo(Y,X)?
+   childOf(Y,Y)? 
+   childOf(Y,'Bea')?
+   siblings(A,B,B,A)?
+   siblings(A,C,'George Foreman',A)?

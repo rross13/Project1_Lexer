@@ -37,6 +37,8 @@ public:
     Predicate parseStringList(Predicate &addVector);
     Predicate parseIDList(Predicate &addVector);
     Predicate parseParameter(Predicate &addVector);
+
+    const DatalogProgram &getDatalogProgram() const;
 };
 
 

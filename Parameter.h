@@ -15,7 +15,7 @@ public:
 }
 
     std::string name;
-    //bool isID = false;
+    bool isID = false;
 
     std::string toString() {
         return name;

@@ -136,6 +136,9 @@
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/IDAutomaton.h">
 			<Option target="Project1"/>
 		</Unit>
+		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/Interpreter.h">
+			<Option target="Project1"/>
+		</Unit>
 		<Unit filename="/users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/LeftParenAutomaton.cpp">
 			<Option target="Project1"/>
 		</Unit>
