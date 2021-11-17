@@ -1,38 +1,23 @@
-# COPYRIGHT © BRIGHAM YOUNG UNIVERSITY CS 236
-# FOR USE ONLY DURING SUMMER 2021 SEMESTER
 Schemes:
-   childOf(A,B)
-   marriedTo(A,B)
-   siblings(W,X,Y,Z)
+  snap(S,N,A,P)
+  csg(C,S,G)
+  cn(C,N)
+  ncg(N,C,G)
 
 Facts:
-   marriedTo('Zed','Bea').
-   marriedTo('Bea','Zed').
-   childOf('Jill','Zed').
-   childOf('Ned','Bea').
-   childOf('Tim','Bea').
-   childOf('Zed','Zed').
-   siblings('Jill','Zed','Tim','Zed').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   childOf('George Foreman','George Foreman').
-   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
-   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
-   siblings('George Foreman','George Foreman','George Foreman','George Foreman').
-   siblings('Tod','Tod','George Foreman','Tod').
+  snap('12345','C. Brown','12 Apple St.','555-1234').
+  snap('22222','P. Patty','56 Grape Blvd','555-9999').
+  snap('33333','Snoopy','12 Apple St.','555-1234').
+  csg('CS101','12345','A').
+  csg('CS101','22222','B').
+  csg('CS101','33333','C').
+  csg('EE200','12345','B+').
+  csg('EE200','22222','B').
 
 Rules:
-   childOf(X,Y):-childOf(X,Z),marriedTo(Y,Z).
-   marriedTo(X,Y):-marriedTo(Y,X).
+  cn(c,n) :- snap(S,n,A,P),csg(c,S,G).
+  ncg(n,c,g) :- snap(S,n,A,P),csg(c,S,g).
 
 Queries:
-   marriedTo(Y,X)?
-   childOf(Y,Y)? 
-   childOf(Y,'Bea')?
-   siblings(A,B,B,A)?
-   siblings(A,C,'George Foreman',A)?
+  cn('CS101',Name)?
+  ncg('Snoopy',Course,Grade)?

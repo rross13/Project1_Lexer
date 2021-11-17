@@ -25,6 +25,7 @@ public:
         addTuples = newDatalogProgram.factsVector;
         AddRelation();
         AddTuples();
+        EvaluateRules();
         EvaluateQueries();
     }
 
@@ -52,13 +53,17 @@ public:
         }
     }
 
+    void EvaluateRules() {
+
+    }
+
     void EvaluateQueries() {
         for(unsigned int i = 0; i < newDatalogProgram.queriesVector.size(); i++) {
             EvaluatePredicate(newDatalogProgram.queriesVector[i]);
         }
     }
 
-    void EvaluatePredicate(Predicate query) {
+    Relation EvaluatePredicate(Predicate query) {
         variableNames.clear();
         variableIndices.clear();
         Relation r = database.myMap[query.name];
@@ -74,6 +79,8 @@ public:
             cout << "No" << endl;
         }
         r.toString();
+
+        return r;
     }
 
     Relation SelectOperations(Relation &r, Predicate query) {
