@@ -18,6 +18,7 @@ public:
     std::vector<string> variableNames;
     std::vector<int> variableIndices;
     Database database;
+    bool addingTuples;
 
     void Interpret(DatalogProgram datalogProgram) {
         newDatalogProgram = datalogProgram;
@@ -54,8 +55,39 @@ public:
     }
 
     void EvaluateRules() {
+        do{
+            addingTuples = false;
+            for(auto&& rule : newDatalogProgram.rulesVector) {
+                EvaluateRule(rule);
+            }
+            
 
+        }while(addingTuples);
     }
+
+    void EvaluateRule(Rule rule) {
+        std::vector<Relation> bodyRelations;
+        for(auto&& predicate : rule.predicateVector) {
+            bodyRelations.push_back(EvaluatePredicate(predicate));
+        }
+        Relation newRelation;
+
+        if(bodyRelations.size() > 1) {
+            newRelation = JoinRelations(bodyRelations);
+        } else if(bodyRelations.size() == 1) {
+            newRelation = bodyRelations[0];
+        }
+        std::vector<int> indices;
+        newRelation = newRelation.project(indices);
+        std::vector<string> newHeader;
+        newRelation.rename(newHeader);
+        bool addedRule = database.myMap[rule.headPredicate.name].Unify(newRelation);
+        addingTuples = true;
+    }
+
+//    Relation JoinRelations (std::vector<Relation> relations) {
+//
+//    }
 
     void EvaluateQueries() {
         for(unsigned int i = 0; i < newDatalogProgram.queriesVector.size(); i++) {

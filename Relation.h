@@ -27,6 +27,7 @@ public:
     std::set<Tuple> tupleSet;
     std::vector<int> alphaIndices;
     std::vector<int> betaIndices;
+    std::vector<int> uniqueIndices;
 
     void addTuple(Tuple &newTuple) {
         tupleSet.insert(newTuple);
@@ -99,10 +100,29 @@ public:
                 }
             }
         }
+        uniqueIndices.clear();
+        for (unsigned int i = 0; i < h2.size(); i++){
+            bool found = false;
+            for (int betaIndex : betaIndices){
+                if (i == (unsigned int)betaIndex){
+                    found = true;
+                    break;
+                }
+            }
+            if (!found){
+                uniqueIndices.push_back(i);
+            }
+        }
+
+        for (int index : uniqueIndices){
+            newHeader.push_back(h2[index]);
+        }
         return newHeader;
     }
 
-    vector<string> findMatches (Relation r2) {
+    void findMatches (Relation r2) {
+        alphaIndices.clear();
+        betaIndices.clear();
         for(unsigned int i = 0; i < this->header.attributes.size(); i++) {
             for(unsigned int j = 0; j < r2.header.attributes.size(); j++) {
                 if(this->header.attributes.at(i) == r2.header.attributes.at(j)) {
@@ -113,17 +133,55 @@ public:
         }
     }
 
+    void addMatches(Relation newRelation, Relation r2){
+        for(auto&& o : this->tupleSet){
+            for(auto&& i : r2.tupleSet){
+                bool match = true;
+                for (unsigned int j = 0; j < alphaIndices.size(); j++){
+                    if (o.values[alphaIndices[j]] != i.values[betaIndices[j]]){
+                        match = false;
+                    }
+                }
+                if (match){
+                    Tuple t = combineTuples(o, i);
+                    newRelation.tupleSet.insert(t);
+                }
+            }
+        }
+
+    }
+
+    Tuple combineTuples(Tuple t1, Tuple t2) {
+        Tuple finalTuple;
+
+        for(auto&& v : t1.values) {
+            finalTuple.values.push_back(v);
+        }
+        for(unsigned int i = 0; i < uniqueIndices.size(); i++) {
+
+        }
+    }
+
     Relation join(Relation r2) {
         Relation rFinal;
+        findMatches(r2);
         vector<string> newHeader = combineHeader(this->header.attributes, r2.header.attributes);
         // set new header
         for(auto&& s: newHeader) {
             rFinal.header.attributes.push_back(s);
         }
-
-
-
+        addMatches(rFinal, r2);
         return rFinal;
+    }
+
+    bool Unify(Relation finalRelation) {
+        bool unified = false;
+        for(auto&& t : finalRelation.tupleSet) {
+            if(this->tupleSet.insert(t).second) {
+                unified = true;
+            }
+        }
+        return unified;
     }
 
 };
