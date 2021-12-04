@@ -1,3 +1,0 @@
-/Users/rileyross/CLionProjects/CS236/Project1-Lexer/Project1/cmake-build-debug-local/CMakeFiles/rebuild_cache.dir
-/Users/rileyross/CLionProjects/CS236/Project1-Lexer/Project1/cmake-build-debug-local/CMakeFiles/edit_cache.dir
-/Users/rileyross/CLionProjects/CS236/Project1-Lexer/Project1/cmake-build-debug-local/CMakeFiles/Project1.dir

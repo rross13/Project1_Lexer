@@ -145,7 +145,7 @@ public:
     std::vector<int> findNewIndices(Relation r, std::vector<Parameter> paramList) {
         std::vector<int> newIndices;
         for(unsigned int i = 0; i < r.header.attributes.size(); i++) {
-            for(unsigned int j = 0; i < paramList.size(); j++) {
+            for(unsigned int j = 0; j < paramList.size(); j++) {
                 if(r.header.attributes.at(i) == paramList.at(j).toString()) {
                     newIndices.push_back(i);
                 }

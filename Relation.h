@@ -94,12 +94,8 @@ public:
         vector<string> newHeader;
         for(auto&& o: h1) {
             newHeader.push_back(o);
-            for(auto&& i: h2) {
-                if(o != i) {
-                    newHeader.push_back(i);
-                }
-            }
         }
+
         uniqueIndices.clear();
         for (unsigned int i = 0; i < h2.size(); i++){
             bool found = false;
@@ -133,7 +129,7 @@ public:
         }
     }
 
-    void addMatches(Relation newRelation, Relation r2){
+    void addMatches(Relation& newRelation, Relation r2){
         for(auto&& o : this->tupleSet){
             for(auto&& i : r2.tupleSet){
                 bool match = true;

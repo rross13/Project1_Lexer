@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer
--- Configuring done
--- Generating done
--- Build files have been written to: /users/guest/r/rross13/cs236/project1_lexer/Project1_Lexer/cmake-build-remote
