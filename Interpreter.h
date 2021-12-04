@@ -77,17 +77,20 @@ public:
         } else if(bodyRelations.size() == 1) {
             newRelation = bodyRelations[0];
         }
-        std::vector<int> indices;
+        std::vector<int> indices = findNewIndices(newRelation, rule.headPredicate.parameterList);
         newRelation = newRelation.project(indices);
-        std::vector<string> newHeader;
+        std::vector<string> newHeader = paramToStrings(rule.headPredicate.parameterList);
         newRelation.rename(newHeader);
-        bool addedRule = database.myMap[rule.headPredicate.name].Unify(newRelation);
-        addingTuples = true;
+        addingTuples = database.myMap[rule.headPredicate.name].Unify(newRelation);
     }
 
-//    Relation JoinRelations (std::vector<Relation> relations) {
-//
-//    }
+    Relation JoinRelations (std::vector<Relation> relations) {
+        Relation r = relations[0];
+        for(unsigned int i = 1; i < relations.size(); i++) {
+            r = r.join(relations[i]);
+        }
+        return r;
+    }
 
     void EvaluateQueries() {
         for(unsigned int i = 0; i < newDatalogProgram.queriesVector.size(); i++) {
@@ -137,6 +140,27 @@ public:
             }
         }
         return r;
+    }
+
+    std::vector<int> findNewIndices(Relation r, std::vector<Parameter> paramList) {
+        std::vector<int> newIndices;
+        for(unsigned int i = 0; i < r.header.attributes.size(); i++) {
+            for(unsigned int j = 0; i < paramList.size(); j++) {
+                if(r.header.attributes.at(i) == paramList.at(j).toString()) {
+                    newIndices.push_back(i);
+                }
+
+            }
+        }
+        return newIndices;
+    }
+
+    std::vector<string> paramToStrings(std::vector<Parameter> paramList) {
+        std::vector<string> newVector;
+        for(auto&& param : paramList) {
+            newVector.push_back(param.name);
+        }
+        return newVector;
     }
 
     void toString() {

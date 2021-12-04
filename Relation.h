@@ -158,8 +158,9 @@ public:
             finalTuple.values.push_back(v);
         }
         for(unsigned int i = 0; i < uniqueIndices.size(); i++) {
-
+            finalTuple.values.push_back(t2.values.at(uniqueIndices.at(i)));
         }
+        return finalTuple;
     }
 
     Relation join(Relation r2) {
