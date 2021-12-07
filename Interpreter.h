@@ -55,14 +55,21 @@ public:
     }
 
     void EvaluateRules() {
+        int counter = 0;
+        cout << "Rule Evaluation" << endl;
         do{
             addingTuples = false;
             for(auto&& rule : newDatalogProgram.rulesVector) {
+                rule.toString();
                 EvaluateRule(rule);
+                cout << endl;
             }
-            
+            counter++;
+
 
         }while(addingTuples);
+
+        cout << "\nSchemes populated after " << counter << " passes through the Rules." << endl;
     }
 
     void EvaluateRule(Rule rule) {
@@ -81,7 +88,10 @@ public:
         newRelation = newRelation.project(indices);
         std::vector<string> newHeader = paramToStrings(rule.headPredicate.parameterList);
         newRelation.rename(newHeader);
-        addingTuples = database.myMap[rule.headPredicate.name].Unify(newRelation);
+        bool result = database.myMap[rule.headPredicate.name].Unify(newRelation);
+        if(result) {
+            addingTuples = true;
+        }
     }
 
     Relation JoinRelations (std::vector<Relation> relations) {
@@ -93,8 +103,10 @@ public:
     }
 
     void EvaluateQueries() {
+        cout << "\nQuery Evaluation" << endl;
         for(unsigned int i = 0; i < newDatalogProgram.queriesVector.size(); i++) {
-            EvaluatePredicate(newDatalogProgram.queriesVector[i]);
+            Relation r = EvaluatePredicate(newDatalogProgram.queriesVector[i]);
+            queryToString(r, newDatalogProgram.queriesVector[i]);
         }
     }
 
@@ -106,7 +118,11 @@ public:
         r = r.project(variableIndices);
         r = r.rename(variableNames);
 
-        query.toString();
+        return r;
+    }
+
+    void queryToString(Relation r, Predicate p) {
+        p.toString();
         cout << "? ";
         if(!r.tupleSet.empty()) {
             cout << "Yes(" << r.tupleSet.size() << ")" << endl;
@@ -114,8 +130,6 @@ public:
             cout << "No" << endl;
         }
         r.toString();
-
-        return r;
     }
 
     Relation SelectOperations(Relation &r, Predicate query) {
@@ -144,10 +158,10 @@ public:
 
     std::vector<int> findNewIndices(Relation r, std::vector<Parameter> paramList) {
         std::vector<int> newIndices;
-        for(unsigned int i = 0; i < r.header.attributes.size(); i++) {
-            for(unsigned int j = 0; j < paramList.size(); j++) {
-                if(r.header.attributes.at(i) == paramList.at(j).toString()) {
-                    newIndices.push_back(i);
+        for(unsigned int i = 0; i < paramList.size(); i++) {
+            for(unsigned int j = 0; j < r.header.attributes.size(); j++) {
+                if(r.header.attributes.at(j) == paramList.at(i).toString()) {
+                    newIndices.push_back(j);
                 }
 
             }

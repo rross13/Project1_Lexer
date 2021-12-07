@@ -35,10 +35,11 @@ public:
 
     void toString() {
         for(auto&& t : tupleSet) {
+            cout << "  ";
             for(unsigned int i = 0; i < this->header.attributes.size(); i++) {
-                cout << "  " << this->header.attributes[i] << "=" << t.values.at(i);
+                cout << this->header.attributes[i] << "=" << t.values.at(i);
                 if(i != this->header.attributes.size() - 1) {
-                    cout << ",";
+                    cout << ", ";
                 }
             }
             cout << endl;
@@ -176,9 +177,25 @@ public:
         for(auto&& t : finalRelation.tupleSet) {
             if(this->tupleSet.insert(t).second) {
                 unified = true;
+                printTuple(t);
             }
         }
         return unified;
+    }
+
+    void printTuple(Tuple tuple) {
+        cout << endl << "  ";
+//        for(auto&& t : tuple.values) {
+//            cout << this->header.attributes.at(0);
+//            cout << "=" << t << " ";
+//        }
+        for(unsigned int i = 0; i < tuple.values.size(); i++) {
+            cout << this->header.attributes.at(i);
+            cout << "=" << tuple.values.at(i);
+            if(i != tuple.values.size() - 1) {
+                cout << ", ";
+            }
+        }
     }
 
 };

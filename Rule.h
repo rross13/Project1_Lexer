@@ -32,7 +32,7 @@ public:
             }
         }
         std::cout << ".";
-//        << headPredicate.name << "(";
+//        std::cout << headPredicate.name << "(";
 //        for(int i = 0; i < headPredicate.parameterList.size(); i++) {
 //            std::cout << "," << headPredicate.parameterList.at(i);
 //        }
